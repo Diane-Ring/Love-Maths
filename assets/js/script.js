@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     runGame("addition");
 
+
 })
+
 /**  The main game loop, called when the script is first loaded and after the users answer has been processed*/
 
 function runGame(gameType) {
@@ -39,8 +41,8 @@ function runGame(gameType) {
         displayMultiplyQuestion(num1, num2);
     } else if (gameType === "subtract") {
         displaySubtractQuestion(num1, num2);
-    } else if (gameType === "division") {
-        displayDivisionQuestion(num1, num2);
+    } else if (gameType === "division"){
+	    displayDivisionQuestion(num1,num2);
     } else {
         alert( `Unknown game type: ${gameType}`);
         throw `Unknown game type: ${gameType}. Aborting!`;
