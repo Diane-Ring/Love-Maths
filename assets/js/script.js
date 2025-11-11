@@ -82,8 +82,8 @@ function calculateCorrectAnswer() {
         return [operand1 * operand2, "multiply"];
     } else if (operator === "-") {
         return [operand1 - operand2, "subtract"];
-    } else if (operator === "/") {
-        return [operand1 / operand2, "division"];
+     } else if (operator ==="/") {
+		return [operand1 / operand2, "division"];
     
     } else {
         alert(`Unimplemented operator ${operator}`);
